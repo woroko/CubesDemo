@@ -11,6 +11,7 @@ from Android to PC and running the project in the editor in Play mode.
 
 ## Activating Developer Mode on Oculus Quest 2
 
+Register as a developer at https://developer.oculus.com/sign-up/ and use the same account to set up your Quest headset. You may need to set up a payment method (the card will not be charged).
 Turn on your Quest headset and open the Oculus app on the Android or iOS device you used to set up your Quest.
 
 1. Tap Settings (bottom-right)
