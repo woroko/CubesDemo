@@ -109,6 +109,6 @@ from [Oculus website](https://developer.oculus.com/documentation/unity/unity-con
 
 ## Performance on Quest 2
 
-When running standalone on the Quest 2, you should be using baked lightmaps as often as possible instead of realtime lighting. In addition to baked lighting, one shadow casting realtime directional light is often enough for objects that move at runtime. The example scene is set up in subtractive lighting mode for the best performance; in this mode, the "Static" checkbox may need to be toggled off for certain objects which need specular lighting.
+When running standalone on the Quest 2, you should be using baked lightmaps as often as possible instead of realtime lighting. In addition to baked lighting, one shadow casting realtime directional light is often enough for objects that move at runtime. The example scene is set up in subtractive lighting mode for the best performance; in this mode, the "Static" checkbox may need to be toggled off for certain objects which need specular lighting, e.g. the metal tunnel in the demo scene.
 
 If you run into performance issues, you can adjust the min and max render scale in the OVR Manager under OVRCameraRig. The default settings are quite high because the demo scene is very simple.
