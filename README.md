@@ -113,8 +113,14 @@ When running standalone on the Quest 2, you should be using baked lightmaps as o
 
 If you run into performance issues, you can adjust the min and max render scale in the OVR Manager under OVRCameraRig. The default settings are quite high because the demo scene is very simple.
 
+## Git
+
+If you're not sure what to use, try https://tortoisegit.org/download/ on Windows. You can also use the CLI. The easiest way to get started is to fork this project on GitHub. For pushing your changes, you need to set up an access token (replaces the older password login which is now disabled on GitHub) or an SSH key (more advanced).
+
 ## Merging
 
 Unity is able to intelligently merge some asset files in case of version conflicts. This is already configured in .gitattributes, but you need to add Unity's Tools directory to your PATH for Git to find the required smart merge tool (UnityYAMLMerge). The tools directory is usually something like "C:\Program Files\Unity\Hub\Editor\2019.4.34f1\Editor\Data\Tools". 
 
 More information on setting the PATH environment variable on Windows: https://www.computerhope.com/issues/ch000549.htm
+
+Generally, we don't recommend editing the same file concurrently. Avoid concurrent editing by making prefabs of the things you are working on, and only add them to the scene at the end once they are ready. Otherwise, you may run into merge conflicts and will have to solve them manually.
