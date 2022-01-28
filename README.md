@@ -112,3 +112,9 @@ from [Oculus website](https://developer.oculus.com/documentation/unity/unity-con
 When running standalone on the Quest 2, you should be using baked lightmaps as often as possible instead of realtime lighting. In addition to baked lighting, one shadow casting realtime directional light is often enough for objects that move at runtime. The example scene is set up in subtractive lighting mode for the best performance; in this mode, the "Static" checkbox may need to be toggled off for certain objects which need specular lighting, e.g. the metal tunnel in the demo scene.
 
 If you run into performance issues, you can adjust the min and max render scale in the OVR Manager under OVRCameraRig. The default settings are quite high because the demo scene is very simple.
+
+## Merging
+
+Unity is able to intelligently merge some asset files in case of version conflicts. This is already configured in .gitattributes, but you need to add Unity's Tools directory to your PATH for Git to find the required smart merge tool (UnityYAMLMerge). The tools directory is usually something like "C:\Program Files\Unity\Hub\Editor\2019.4.34f1\Editor\Data\Tools". 
+
+More information on setting the PATH environment variable on Windows: https://www.computerhope.com/issues/ch000549.htm
