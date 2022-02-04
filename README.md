@@ -124,3 +124,7 @@ Unity is able to intelligently merge some asset files in case of version conflic
 More information on setting the PATH environment variable on Windows: https://www.computerhope.com/issues/ch000549.htm
 
 Generally, we don't recommend editing the same file concurrently. Avoid concurrent editing by making prefabs of the things you are working on, and only add them to the scene at the end once they are ready. Otherwise, you may run into merge conflicts and will have to solve them manually.
+
+## Resources
+
+https://polyhaven.com/
